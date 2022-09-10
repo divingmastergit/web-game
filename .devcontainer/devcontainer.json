@@ -47,5 +47,8 @@
 	"features": {
 		"git": "os-provided",
 		"azure-cli": "latest"
-	}
+	},
+	"mounts": [
+        	"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind"
+    	]
 }
