@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<p style="text-align:center;">Hello, user</p>
+
+<!-- We can replace with buttons and javascript -->
+<form action = "/guess" method = "POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="secretId">Guess</label>
+        <input type="text" class="form-control" id="secretId" name="secretWord" aria-describedby="secretHelp" placeholder="Guess a Word" required>
+        <small id="secretHelp" class="form-text text-muted">Guess the word</small>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
